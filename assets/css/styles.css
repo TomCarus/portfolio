@@ -1,49 +1,105 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif; /* Consider using a web-safe or Google font */
+    color: #333;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
+/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40; /* Dark grey for main text */
     text-align: center;
+    margin-bottom: 10px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+nav.navbar {
+    justify-content: center;
+    margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
+.nav-link {
+    font-size: 1.1rem;
+    color: #007bff !important; /* Ensure links stand out */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.nav-link:hover {
+    color: #0056b3 !important; /* Darker shade on hover */
 }
 
-section {
-    padding: 2rem;
+/* Section Styles */
+h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+p {
+    margin-bottom: 15px;
 }
 
 .project {
-    background: #f4f4f4;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    background-color: #ffffff;
+    padding: 15px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+/* Form Styles */
+.form-control {
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Footer Styles */
 footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff;
+    padding: 15px 0;
     text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1.display-4 {
+        font-size: 2rem;
+    }
+
+    nav.navbar {
+        flex-direction: column;
+    }
+
+    .col-md-4 {
+        margin-bottom: 30px;
+    }
 }
